@@ -1,8 +1,8 @@
 
 from werkzeug.security import check_password_hash, generate_password_hash
+from flask_login import UserMixin
 
-
-class Profesor():
+class Profesor(UserMixin):
 
     def __init__(self,id_profesor,rut,password,nombre="") -> None:
         self.id = id_profesor
