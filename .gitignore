@@ -1,0 +1,12 @@
+#Virtual Environment
+venv/
+
+#Flask
+instance/*
+!instance/.gitignore
+.webassets-cache
+
+#Byte.compiled
+__pycache__/
+*.py[cod]
+*$py.class
