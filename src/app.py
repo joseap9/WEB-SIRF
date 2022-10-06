@@ -1,9 +1,9 @@
 from flask import Flask, render_template, Response, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
 from flask_login import LoginManager, login_user, logout_user, login_required
-from main import gen_frames
-from config import config
 
+from config import config
+import classifier
 #Models
 from models.ModelUser import ModelUser
 #Entities
@@ -22,7 +22,7 @@ app.config['MYSQL_DB'] = 'sirf'
 db = MySQL(app)
 
 #login_manager_app = LoginManager(app)
-
+lista = []
 
 @app.route('/')
 def index():
@@ -52,16 +52,16 @@ def login():
 
 @app.route('/home')
 def home():
-    return render_template('home.html')
+    #print(classifier.asistentes)
+    """ for item in classifier.asistentes:
+        lista.append(item)
+    print(lista) """
+    return render_template('home.html',lista=classifier.asistentes)
 
 @app.route('/video_feed')
 def video_feed():
-    return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(classifier.gen_frame(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-if __name__ == '__main__':
+if __name__=='__main__':
     app.config.from_object(config['development'])
-    app.run()
-
-
-
-
+    app.run(debug=True)

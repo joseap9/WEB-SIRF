@@ -1,11 +1,19 @@
 {%extends './base.html' %}
 
-{%block title%} SIRF {%endblock%}
+{%block title%} Listado {%endblock%}
 
 {% block customCSS %}<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">{% endblock %}
 
+<!-- {% block headTitle %}
+<h1>Asistentes de hoy</h1>
+{% endblock %} -->
+
 {%block body%}
-
-<h1>Bienvenido</h1>
-
+<ol>
+{% for elemento in lista %}
+<li>
+{{ elemento }}
+</li>
+{% endfor %}
+</ol>
 {% endblock %}

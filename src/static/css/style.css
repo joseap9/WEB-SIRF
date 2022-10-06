@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-success {
+    background-color: #db7914;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -36,4 +40,8 @@ body {
 .login form input[type="submit"] {
     font-size: 20px;
     margin-top: 15px;
+}
+
+li {
+    font-size: 26px
 }
