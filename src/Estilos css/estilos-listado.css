@@ -1,0 +1,49 @@
+body{
+    display: block;
+    margin: 0%;
+    background: #333334;
+}
+.encabezado{
+    display: block;
+    background: blue;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    margin: 0%;
+    width: 100%;
+}
+.encabezado img{
+    border-radius: 100%;
+    width: 6%;
+    box-shadow: 10px 5px 5px black;
+    margin: 0.5%;
+}
+
+.cuerpo{
+    display: block;
+    background: white;
+    margin: 5%;
+    text-align: center;
+    padding: 1%;
+    
+}
+.cuerpo li{
+    border: 1px solid black ;
+}
+.cuerpo .a{
+    list-style: none;
+    width: 10%;
+    margin: 0%;
+    display: inline-block;
+    
+}
+.cuerpo .b {
+    list-style: none;
+    width: 10%;
+    display: inline-block;
+    margin: 0%;
+}
+.cuerpo .c {
+    list-style: none;
+    width: 10%;
+    display: inline-block;
+    margin-left: 0%;
+}

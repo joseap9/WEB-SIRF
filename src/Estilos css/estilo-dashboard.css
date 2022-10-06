@@ -1,0 +1,50 @@
+*{
+    font-family: 'Franklin Gothic Medium';
+}
+body{
+    display: block;
+    margin: 0%;
+}
+.encabezado{
+    display: block;
+    background: blue;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    margin: 0%;
+    width: 100%;
+}
+.encabezado .logo{
+    border-radius: 100%;
+    width: 6%;
+    box-shadow: 10px 5px 5px black;
+    margin: 0.5%;
+}
+.encabezado .N_app{
+    display: inline-block;
+    position: relative;
+    left: 1%;
+    width: 10%;
+    text-shadow: #333334 0.1em 0.1em 0.2em;
+}
+.encabezado .N_usuario{
+    display: inline-block;
+    width: 10%;
+    margin-left: 65%;
+    text-decoration: line-through;
+    text-shadow: #333334 0.1em 0.1em 0.2em;
+}
+.encabezado .f_perfil{
+    width: 4%;
+    margin: 0%;
+    border-radius: 100%;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cuerpo{
+    margin: auto;
+    text-align: center;
+}
+
+.cuerpo img{
+    margin-top: 5%;
+    width: 50%;
+}
